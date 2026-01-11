@@ -234,10 +234,10 @@
                 Iteration 9 (3-10 Dec): Unit testing, leaderboard.
               </li>
               <li>
-                Iteration 10 (11-22 Dec): Map and art updates; unit testing.
+                Iteration 10 (11-22 Dec): Map and art updates, unit testing.
               </li>
               <li>
-                Iteration 11 (1-11 Jan): Continuous integration; art updates; unit testing. 
+                Iteration 11 (1-11 Jan): Continuous integration, art updates, unit testing. 
               </li>
             </ul>
           </div>
@@ -358,6 +358,44 @@
                   </li>
                 </ul>
               </li>
+              <li>
+                <strong>T012</strong> Planning changes
+                <ul>
+                  <li>Start: 11 Nov • Finish: 24 Nov</li>
+                  <li>
+                    Dependencies: none • Output: Clear plan of changes to make to
+                    the game and deliverables
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>T013</strong> Adding new events
+                <ul>
+                  <li>Start: 15 Nov • Finish: 6 Jan</li>
+                  <li>
+                    Dependencies: T012 • Output: Updated game that meets 
+                    A2 requirements
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>T014</strong> Unit testing
+                <ul>
+                  <li>Start: 3 Dec • Finish: 6 Jan</li>
+                  <li>
+                    Dependencies: T012, T013 • Output: Unit tests for the game with wide coverage
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>T015</strong> Continuous integration
+                <ul>
+                  <li>Start: 2 Jan • Finish: 6 Jan</li>
+                  <li>
+                    Dependencies: T012 • Output: A continuous integration plan for the game
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
 
@@ -373,6 +411,9 @@
               </li>
               <li>T009 depends on T004 and T008 (build + artifact).</li>
               <li>T011 depends on all prior tasks.</li>
+              <li>T013 depends on T012</li>
+              <li>T014 depends on T012</li>
+              <li>T015 depends on T012</li>
             </ul>
           </div>
 
