@@ -198,7 +198,7 @@
           <h2 class="section-title">Systematic plan</h2>
 
           <div class="entry">
-            <h4>Milestones and dates (A1 due Mon 10 Nov 2025)</h4>
+            <h4>Milestones and dates for Assessment 1 (A1 due Mon 10 Nov 2025)</h4>
             <ul>
               <li>
                 Iteration 1 (1–7 Oct): Risk register baseline; requirements
@@ -224,26 +224,20 @@
                 Iteration 6 (5–10 Nov): Timer/pause/counters; polish, packaging,
                 PDFs and website.
               </li>
-              <li>
-                Iteration 7 (11-26 Nov): Planning changes, events.
-              </li>
-              <li>
-                Iteration 8 (27 Nov-2 Dec): Leaderboard, refactoring.
-              </li>
-              <li>
-                Iteration 9 (3-10 Dec): Unit testing, leaderboard.
-              </li>
-              <li>
-                Iteration 10 (11-22 Dec): Map and art updates, unit testing.
-              </li>
-              <li>
-                Iteration 11 (1-11 Jan): Continuous integration, art updates, unit testing. 
-              </li>
+            </ul>
+            <h4>Milestones and dates for Assessment 2 (A2 due Mon 12 Jan 2026)</h4>
+            <ul>
+              <li>Iteration 7 (17-24 Nov): Planning changes, events.</li>
+              <li>Iteration 8 (25 Nov-1 Dec): Leaderboard, refactoring, events.</li>
+              <li>Iteration 9 (2-8 Dec): Unit testing, leaderboard, map and art updates.</li>
+              <li>Iteration 10 (9-15 Dec): Unit Testing.</li>
+              <li>Iteration 11 (16 Dec-4 Jan): Continuous integration, art updates, unit testing</li>
+              <li>Iteration 12 (5-11 Jan): Polishing, pdfs, website</li>
             </ul>
           </div>
 
           <div class="entry">
-            <h4>Key tasks with dates, priorities, dependencies</h4>
+            <h4>Key tasks with dates, priorities, dependencies for A1</h4>
             <ul>
               <li>
                 <strong>T001</strong> Risk assessment and mitigation
@@ -358,41 +352,115 @@
                   </li>
                 </ul>
               </li>
+            </ul>
+            <h4>Key tasks with dates, priorities, dependencies for A2</h4>
+            <ul>
               <li>
-                <strong>T012</strong> Planning changes
+                <strong>T012</strong> Review old documents and code, make necessary changes
                 <ul>
-                  <li>Start: 11 Nov • Finish: 24 Nov</li>
+                  <li>Start: 17 Nov • Finish: 24 Nov</li>
                   <li>
-                    Dependencies: none • Output: Clear plan of changes to make to
-                    the game and deliverables
+                    Dependencies: T001-T011 • Output: Change report and all the updated deliverables
                   </li>
                 </ul>
               </li>
               <li>
-                <strong>T013</strong> Adding new events
+                <strong>T013</strong> Clone repository and refactor code
                 <ul>
-                  <li>Start: 15 Nov • Finish: 6 Jan</li>
+                  <li>Start: 17 Nov • Finish: 24 Nov</li>
                   <li>
-                    Dependencies: T012 • Output: Updated game that meets 
-                    A2 requirements
+                    Dependencies: T004-T008, T010 • Output: New repository on github, refactored code
                   </li>
                 </ul>
               </li>
               <li>
-                <strong>T014</strong> Unit testing
+                <strong>T014</strong> Additional events for Assessment 2
                 <ul>
-                  <li>Start: 3 Dec • Finish: 6 Jan</li>
+                  <li>Start: 24 Nov • Finish: 1 Jan</li>
                   <li>
-                    Dependencies: T012, T013 • Output: Unit tests for the game with wide coverage
+                    Dependencies: T013 • Output: 4 additional negative events, 2 additional positive 
+                    events, 2 additional hidden events
                   </li>
                 </ul>
               </li>
               <li>
-                <strong>T015</strong> Continuous integration
+                <strong>T015</strong> Achievement system
                 <ul>
-                  <li>Start: 2 Jan • Finish: 6 Jan</li>
+                  <li>Start: 24 Nov • Finish: 7 Nov</li>
                   <li>
-                    Dependencies: T012 • Output: A continuous integration plan for the game
+                    Dependencies: T013 (map loader) • Output: Triggering mechanism, achievements
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>T016</strong> Leaderboard functionality
+                <ul>
+                  <li>Start: 1 Dec • Finish: 7 Dec</li>
+                  <li>
+                    Dependencies: T013 • Output: Leaderboard class and methods
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>T017</strong> Create new map
+                <ul>
+                  <li>Start: 1 Dec • Finish: 14 Dec</li>
+                  <li>
+                    Dependencies: T013 • Output: New maze with improved graphics
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>T018</strong> Implement CI techniques
+                <ul>
+                  <li>Start: 8 Dec • Finish: 11 Jan</li>
+                  <li>
+                    Dependencies: T013 • Output: Three working events, counters implemented
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>T019</strong> Create new screens
+                <ul>
+                  <li>Start: 8 Dec • Finish: 11 Jan</li>
+                  <li>
+                    Dependencies: T013 • Output: Information screen, leaderboard screen
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>T020</strong> Carry out user evaluation
+                <ul>
+                  <li>Start: 8 Dec • Finish: 11 Jan</li>
+                  <li>
+                    Dependencies: T013-T017 • Output: Eval2.pdf, user evaluation data
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>T021</strong> User evaluation code changes
+                <ul>
+                  <li>Start: 15 Dec • Finish: 11 Jan</li>
+                  <li>
+                    Dependencies: T018 • Output: Updated code after reflections from user evaluation
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>T021</strong> Carry out user evaluation
+                <ul>
+                  <li>Start: 8 Dec • Finish: 15 Dec</li>
+                  <li>
+                    Dependencies: T013-T017 • Output: Eval2.pdf, user evaluation data
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>T022</strong> Website and deliverables
+                <ul>
+                  <li>Start: 5 Jan • Finish: 11 Jan</li>
+                  <li>
+                    Dependencies: all • Output: Website with links to PDFs, JAR, repo; final checks of pdfs
                   </li>
                 </ul>
               </li>
@@ -411,9 +479,12 @@
               </li>
               <li>T009 depends on T004 and T008 (build + artifact).</li>
               <li>T011 depends on all prior tasks.</li>
-              <li>T013 depends on T012 (planning changes)</li>
-              <li>T014 depends on T012 (planning changes)</li>
-              <li>T015 depends on T012 (planning changes)</li>
+              <li>T012 depends on T001-T011 (all the previous documents from A1)</li>
+              <li>T013 depends on T004-T008, T010 (all code & repository tasks)</li>
+              <li>T014-T019 all depend on T013</li>
+              <li>T020 depends on T013-T017 (all new code features)</li>
+              <li>T021 depends on T020 (user evaluation)</li>
+              <li>T022 depends on all prior tasks</li>
             </ul>
           </div>
 
@@ -469,7 +540,7 @@
           </div>
 
           <div class="entry">
-            <h4>Priorities (MoSCoW)</h4>
+            <h4>Priorities (MoSCoW) for A1</h4>
             <ul>
               <li>
                 Must: T001–T009, T011 (meets A1 brief: one of each event, timer
@@ -483,6 +554,16 @@
               <li>
                 Could: Optional marketing link/QR event if time permits
                 (de‑scoped if it risks Musts).
+              </li>
+            </ul>
+            <h4>Priorities (MoSCoW) for A2</h4>
+            <ul>
+              <li>
+                Must: T012-T020 (refactored deliverables & code, events, leaderboard, 
+                achievements, CI, user evaluation carried out)
+              </li>
+              <li>
+                Should: T021 (user evaluation code changes)
               </li>
             </ul>
           </div>
